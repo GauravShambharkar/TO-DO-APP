@@ -1,9 +1,12 @@
 const input = document.querySelector("input");
 const add = document.querySelector("button");
+add.style.color = "white"
 
 const Clear = document.querySelector("#Clear");
+Clear.style.color = 'white'
 
 const todo = document.querySelector(".todo");
+
 
 let ctr = 1;
 
