@@ -11,8 +11,7 @@
     font-weight: 100;
 }
 
-html,
-body {
+html, body {
     height: 100%;
     width: 100%;
 }
@@ -39,7 +38,6 @@ body {
         top: 25%;
         right: 34%;
         font-size: 5rem;
-
         color: white;
     }
 }
