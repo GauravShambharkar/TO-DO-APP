@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     font-family: pixel;
-    color: rgb(14, 14, 71);
+    color: rgb(221, 221, 221);
     font-weight: 100;
 }
 
@@ -28,25 +28,35 @@ body {
     background-position: center;
     /* border: 2px solid black; */
     /* background-color: black; */
+   
+}
+
+.header{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: relative;
-
+    text-align: center;
     h1 {
-        position: absolute;
-        top: 25%;
-        right: 34%;
-        font-size: 5rem;
-
+        /* border: 2px solid white; */
+        font-size: clamp(3rem, 6vw , 10rem);
         color: white;
     }
+}
+
+.todoSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid white; */
+    margin-top: 20px;
+    height:80%;
+
+
 }
 
 .box {
     padding: 10px 10px 10px 10px;
     width: 300px;
+    height: fit-content;
     /* height: 400px; */
     border-radius: 27px;
     background-color: rgba(255, 255, 255, 0.134);
@@ -57,6 +67,7 @@ body {
 
 .allButton {
     display: flex;
+    justify-content: space-between;
     gap: 10px;
     color: white;
 }
@@ -64,6 +75,7 @@ body {
 input {
     padding: 10px 5px 0px 5px;
     border-radius: 15px;
+    color: #000000;
 
 
 }
@@ -71,14 +83,14 @@ input {
 #add {
     border-radius: 15px;
     padding: 0px 9px 0px 9px;
-    background-color: #44362735;
+    background-color: #ffffff1b;
     /* color: white; */
 }
 
 #Clear {
     border-radius: 15px;
     padding: 0px 9px 0px 9px;
-    background-color: #44362735;
+    background-color: #ffffff1b;
     /* color: white; */
 
 }
