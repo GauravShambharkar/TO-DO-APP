@@ -1,22 +1,28 @@
 const input = document.querySelector("input");
 const add = document.querySelector("button");
-add.style.color = "white"
+add.style.color = "white";
 
 const Clear = document.querySelector("#Clear");
-Clear.style.color = 'white'
+Clear.style.color = "white";
 
 const todo = document.querySelector(".todo");
 
-
 let ctr = 1;
 
+
 add.addEventListener("click", () => {
+
+  if (input.value == "") {
+    alert("input feild is empty");
+    return;
+  }
+
   console.log("running");
   let div = document.createElement("div");
   div.style.display = "flex";
-  div.style.alignItems = 'center'
+  div.style.alignItems = "center";
   div.style.gap = "10px";
-  div.style.margin = '15px 0px 0px 0px'
+  div.style.margin = "15px 0px 0px 0px";
   div.setAttribute("id", "todo-" + ctr);
   ctr++;
   todo.appendChild(div);
@@ -31,7 +37,7 @@ add.addEventListener("click", () => {
   DeleteBtn.textContent = "Delete";
   DeleteBtn.style.padding = "4px";
   DeleteBtn.style.borderRadius = "10px";
-
+  DeleteBtn.style.color = "black";
 
   div.appendChild(DeleteBtn);
 
@@ -39,6 +45,7 @@ add.addEventListener("click", () => {
   update.textContent = "Update";
   update.style.padding = "4px";
   update.style.borderRadius = "10px";
+  update.style.color = "black";
   div.appendChild(update);
 
   DeleteBtn.addEventListener("click", () => {
