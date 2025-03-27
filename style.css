@@ -28,27 +28,28 @@ body {
     background-position: center;
     /* border: 2px solid black; */
     /* background-color: black; */
-   
+
 }
 
-.header{
+.header {
     display: flex;
     justify-content: center;
     text-align: center;
+
     h1 {
         /* border: 2px solid white; */
-        font-size: clamp(3rem, 6vw , 10rem);
+        font-size: clamp(3rem, 6vw, 10rem);
         color: white;
     }
 }
 
-.todoSection{
+.todoSection {
     display: flex;
     align-items: center;
     justify-content: center;
     /* border: 2px solid white; */
     margin-top: 20px;
-    height:80%;
+    height: 80%;
 
 
 }
